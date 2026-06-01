@@ -1,52 +1,6 @@
 import RevealSection from './RevealSection';
-import { ArrowUpRight, Zap, BookOpen, Music, Globe, Github } from 'lucide-react';
-
-const projects = [
-  {
-    icon: Zap,
-    title: 'AI Learning Systems',
-    github: null, // replace with e.g. 'https://github.com/you/repo'
-    image: null, // replace with your image URL e.g. 'https://...'
-    description:
-      'Developing intelligent tutoring tools that adapt to individual learning patterns using machine learning models and real-time feedback loops.',
-    tags: ['Machine Learning', 'Python', 'Education'],
-    accent: 'hsl(158 75% 52%)',
-    accentBg: 'hsla(158, 75%, 52%, 0.08)',
-  },
-  {
-    icon: BookOpen,
-    title: 'IoT Education Platform',
-    github: null,
-    image: null,
-    description:
-      'Designed and delivered a hands-on IoT curriculum for young learners, covering sensors, microcontrollers, and connected systems over 2 years.',
-    tags: ['IoT', 'Teaching', 'Curriculum Design'],
-    accent: 'hsl(195 90% 55%)',
-    accentBg: 'hsla(195, 90%, 55%, 0.08)',
-  },
-  {
-    icon: Music,
-    title: 'Audio ML Research',
-    github: null,
-    image: null,
-    description:
-      'Exploring spectrogram-based deep learning models for audio classification and signal processing applications.',
-    tags: ['Deep Learning', 'Audio', 'Research'],
-    accent: 'hsl(175 70% 52%)',
-    accentBg: 'hsla(175, 70%, 52%, 0.08)',
-  },
-  {
-    icon: Globe,
-    title: '4-H Innovation Lab',
-    github: null,
-    image: null,
-    description:
-      'Led financial planning, logistics, and workshop execution for an innovation lab in India — bridging technology education with community impact.',
-    tags: ['Leadership', 'Operations', 'Impact'],
-    accent: 'hsl(145 65% 52%)',
-    accentBg: 'hsla(145, 65%, 52%, 0.08)',
-  },
-];
+import { ArrowUpRight, Github } from 'lucide-react';
+import { projects } from '@/data/portfolio-data';
 
 export default function ProjectsSection() {
   return (

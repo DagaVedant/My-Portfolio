@@ -1,45 +1,5 @@
 import RevealSection from './RevealSection';
-import { Target } from 'lucide-react';
-
-const techCategories = [
-  {
-    category: 'Languages',
-    color: 'hsl(158 75% 52%)',
-    bg: 'hsla(158, 75%, 52%, 0.08)',
-    border: 'hsla(158, 75%, 52%, 0.2)',
-    items: ['Python', 'JavaScript', 'HTML/CSS', 'Bash'],
-  },
-  {
-    category: 'AI / ML',
-    color: 'hsl(195 90% 55%)',
-    bg: 'hsla(195, 90%, 55%, 0.08)',
-    border: 'hsla(195, 90%, 55%, 0.2)',
-    items: ['NumPy', 'Pandas', 'Scikit-learn', 'TensorFlow', 'Librosa'],
-  },
-  {
-    category: 'Hardware & IoT',
-    color: 'hsl(175 70% 52%)',
-    bg: 'hsla(175, 70%, 52%, 0.08)',
-    border: 'hsla(175, 70%, 52%, 0.2)',
-    items: ['Arduino', 'Raspberry Pi', 'Sensors & Actuators', 'Breadboarding'],
-  },
-  {
-    category: 'Tools & Platforms',
-    color: 'hsl(145 65% 52%)',
-    bg: 'hsla(145, 65%, 52%, 0.08)',
-    border: 'hsla(145, 65%, 52%, 0.2)',
-    items: ['Git & GitHub', 'VS Code', 'Jupyter Notebooks', 'Google Colab'],
-  },
-  {
-    category: 'Learning Next',
-    color: 'hsl(210 80% 62%)',
-    bg: 'hsla(210, 80%, 62%, 0.08)',
-    border: 'hsla(210, 80%, 62%, 0.2)',
-    items: ['PyTorch', 'LLM Fine-tuning', 'React', 'Docker', 'LangChain'],
-    dashed: true,
-    icon: Target,
-  },
-];
+import { techCategories } from '@/data/portfolio-data';
 
 export default function TechStackSection() {
   return (

@@ -1,45 +1,6 @@
 import RevealSection from './RevealSection';
 import { Award, BookOpen } from 'lucide-react';
-
-const certifications = [
-  {
-    title: 'AI for Everyone',
-    issuer: 'DeepLearning.AI / Coursera',
-    year: '2024',
-    color: 'hsl(158 75% 52%)',
-    bg: 'hsla(158, 75%, 52%, 0.08)',
-    border: 'hsla(158, 75%, 52%, 0.25)',
-  },
-  {
-    title: 'Python for Data Science',
-    issuer: 'IBM / Coursera',
-    year: '2024',
-    color: 'hsl(195 90% 55%)',
-    bg: 'hsla(195, 90%, 55%, 0.08)',
-    border: 'hsla(195, 90%, 55%, 0.25)',
-  },
-  {
-    title: 'IoT Fundamentals',
-    issuer: 'Cisco Networking Academy',
-    year: '2023',
-    color: 'hsl(175 70% 52%)',
-    bg: 'hsla(175, 70%, 52%, 0.08)',
-    border: 'hsla(175, 70%, 52%, 0.25)',
-  },
-  {
-    title: 'Machine Learning Specialization',
-    issuer: 'Stanford / Coursera',
-    year: '2024',
-    color: 'hsl(145 65% 52%)',
-    bg: 'hsla(145, 65%, 52%, 0.08)',
-    border: 'hsla(145, 65%, 52%, 0.25)',
-  },
-];
-
-const inProgress = [
-  { title: 'Deep Learning Specialization', issuer: 'DeepLearning.AI', color: 'hsl(145 65% 52%)', bg: 'hsla(145, 65%, 52%, 0.08)', border: 'hsla(145, 65%, 52%, 0.25)' },
-  { title: 'TensorFlow Developer Certificate', issuer: 'Google', color: 'hsl(158 75% 52%)', bg: 'hsla(158, 75%, 52%, 0.08)', border: 'hsla(158, 75%, 52%, 0.25)' },
-];
+import { certifications, certificationsInProgress as inProgress } from '@/data/portfolio-data';
 
 export default function CertificationsSection() {
   return (

@@ -1,13 +1,6 @@
 import RevealSection from './RevealSection';
-import { Mail, ArrowUpRight, Sparkles, Phone, Linkedin, Github } from 'lucide-react';
-
-// ── Update your contact details here ──
-const contactLinks = [
-  { icon: Mail,     label: 'Email',    value: 'vedant@example.com',           href: 'mailto:vedant@example.com' },
-  { icon: Phone,    label: 'Phone',    value: '+1 (555) 000-0000',            href: 'tel:+15550000000' },
-  { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/in/vedantdaga',   href: 'https://linkedin.com/in/vedantdaga' },
-  { icon: Github,   label: 'GitHub',   value: 'github.com/vedantdaga',        href: 'https://github.com/vedantdaga' },
-];
+import { ArrowUpRight, Sparkles } from 'lucide-react';
+import { contactLinks } from '@/data/portfolio-data';
 
 export default function ContactSection() {
   return (

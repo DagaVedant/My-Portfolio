@@ -1,40 +1,5 @@
 import RevealSection from './RevealSection';
-import { Trophy, Star, Medal, Flame } from 'lucide-react';
-
-const recognitions = [
-  {
-    icon: Trophy,
-    title: '4-H Innovation Award',
-    description: 'Recognized for outstanding leadership and program development at the 4-H Innovation Lab in India.',
-    year: '2024',
-    color: 'hsl(158 75% 52%)',
-    bg: 'hsla(158, 75%, 52%, 0.08)',
-  },
-  {
-    icon: Star,
-    title: 'STEM Workshop Excellence',
-    description: 'Acknowledged for designing and running impactful IoT workshops reaching 50+ students.',
-    year: '2023',
-    color: 'hsl(195 90% 55%)',
-    bg: 'hsla(195, 90%, 55%, 0.08)',
-  },
-  {
-    icon: Medal,
-    title: 'Club Leadership Recognition',
-    description: 'Award for restructuring club operations and growing active membership by 3x.',
-    year: '2023',
-    color: 'hsl(175 70% 52%)',
-    bg: 'hsla(175, 70%, 52%, 0.08)',
-  },
-  {
-    icon: Flame,
-    title: 'Top Fundraiser',
-    description: 'Led fundraising campaigns that funded lab equipment and educational resources.',
-    year: '2022',
-    color: 'hsl(145 65% 52%)',
-    bg: 'hsla(145, 65%, 52%, 0.08)',
-  },
-];
+import { recognitions } from '@/data/portfolio-data';
 
 export default function RecognitionsSection() {
   return (

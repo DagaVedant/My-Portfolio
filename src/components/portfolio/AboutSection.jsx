@@ -1,36 +1,5 @@
 import RevealSection from './RevealSection';
-import { Brain, Users, Lightbulb, BarChart3 } from 'lucide-react';
-
-const highlights = [
-  {
-    icon: Brain,
-    title: 'AI & Machine Learning',
-    description: 'Exploring applied ML with a focus on audio processing, spectrogram-based models, and real-world AI systems.',
-    color: 'hsl(158 75% 52%)',
-    bg: 'hsla(158, 75%, 52%, 0.08)',
-  },
-  {
-    icon: Users,
-    title: 'Education & Teaching',
-    description: '2+ years teaching IoT to kids, designing curricula, and running workshops that make technology accessible.',
-    color: 'hsl(195 90% 55%)',
-    bg: 'hsla(195, 90%, 55%, 0.08)',
-  },
-  {
-    icon: Lightbulb,
-    title: 'Program Leadership',
-    description: 'Managed finances, logistics, and strategy for a 4-H Innovation Lab in India — from fundraising to execution.',
-    color: 'hsl(175 70% 52%)',
-    bg: 'hsla(175, 70%, 52%, 0.08)',
-  },
-  {
-    icon: BarChart3,
-    title: 'Systems Thinking',
-    description: 'Building and improving educational program structures, club operations, and scalable learning frameworks.',
-    color: 'hsl(145 65% 52%)',
-    bg: 'hsla(145, 65%, 52%, 0.08)',
-  },
-];
+import { aboutBio, aboutHighlights as highlights } from '@/data/portfolio-data';
 
 export default function AboutSection() {
   return (
@@ -54,10 +23,7 @@ export default function AboutSection() {
             <span className="gradient-text">education.</span>
           </h2>
           <p className="text-lg leading-relaxed max-w-2xl mb-16" style={{ color: 'hsl(175 20% 62%)' }}>
-            I&apos;m passionate about using technology to create meaningful learning experiences.
-            My work spans from teaching IoT fundamentals to kids, to building AI-powered tools 
-            that make education more engaging and accessible. I believe the best technology 
-            serves people — and I&apos;m focused on proving that.
+            {aboutBio}
           </p>
         </RevealSection>
 

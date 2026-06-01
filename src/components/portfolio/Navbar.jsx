@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
+import { personal } from '@/data/portfolio-data';
 
 
 const navLinks = [
@@ -47,7 +48,7 @@ export default function Navbar() {
           onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
           className="font-inter font-black text-xl tracking-tight text-foreground hover:opacity-80 transition-opacity"
         >
-          VD<span className="gradient-text">.</span>
+          {personal.initials}<span className="gradient-text">.</span>
         </a>
         <div className="flex items-center gap-5 overflow-x-auto scrollbar-none">
           {navLinks.map((link) => (

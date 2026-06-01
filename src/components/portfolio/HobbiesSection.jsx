@@ -1,50 +1,5 @@
 import RevealSection from './RevealSection';
-import { Headphones, Camera, Gamepad2, BookMarked, Mountain, Microscope } from 'lucide-react';
-
-const hobbies = [
-  {
-    icon: Headphones,
-    label: 'Music & Audio',
-    description: 'Deep love for audio — from listening to analyzing sound with ML.',
-    color: 'hsl(158 75% 52%)',
-    bg: 'hsla(158, 75%, 52%, 0.08)',
-  },
-  {
-    icon: Microscope,
-    label: 'Tinkering',
-    description: 'Taking things apart, building circuits, experimenting with hardware.',
-    color: 'hsl(195 90% 55%)',
-    bg: 'hsla(195, 90%, 55%, 0.08)',
-  },
-  {
-    icon: BookMarked,
-    label: 'Reading',
-    description: 'Science, technology history, and the occasional sci-fi novel.',
-    color: 'hsl(175 70% 52%)',
-    bg: 'hsla(175, 70%, 52%, 0.08)',
-  },
-  {
-    icon: Gamepad2,
-    label: 'Gaming',
-    description: 'Strategy games and anything with good world-building.',
-    color: 'hsl(145 65% 52%)',
-    bg: 'hsla(145, 65%, 52%, 0.08)',
-  },
-  {
-    icon: Mountain,
-    label: 'Outdoors',
-    description: 'Hiking, exploring, and getting away from screens (sometimes).',
-    color: 'hsl(165 70% 50%)',
-    bg: 'hsla(165, 70%, 50%, 0.08)',
-  },
-  {
-    icon: Camera,
-    label: 'Photography',
-    description: 'Capturing moments and playing with light and composition.',
-    color: 'hsl(210 75% 58%)',
-    bg: 'hsla(210, 75%, 58%, 0.08)',
-  },
-];
+import { hobbies } from '@/data/portfolio-data';
 
 export default function HobbiesSection() {
   return (

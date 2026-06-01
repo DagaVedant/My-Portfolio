@@ -1,15 +1,5 @@
 import { useState, useEffect } from 'react';
-
-const words = [
-  'AI Builder',
-  'Educator',
-  'Engineer',
-  'IoT Teacher',
-  'ML Explorer',
-  'Innovator',
-  'Problem Solver',
-  'Workshop Leader',
-];
+import { rotatingWords as words } from '@/data/portfolio-data';
 
 export default function RotatingWordWheel() {
   const [currentIndex, setCurrentIndex] = useState(0);

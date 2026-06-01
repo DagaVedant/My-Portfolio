@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import RotatingWordWheel from './RotatingWordWheel';
+import { personal, taglineParts } from '@/data/portfolio-data';
 
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false);
@@ -43,9 +44,9 @@ export default function HeroSection() {
               mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
             }`}
           >
-            <span className="text-foreground">Vedant</span>
+            <span className="text-foreground">{personal.firstName}</span>
             <br />
-            <span className="gradient-text">Daga</span>
+            <span className="gradient-text">{personal.lastName}</span>
           </h1>
 
           {/* Tagline */}
@@ -55,10 +56,11 @@ export default function HeroSection() {
             }`}
             style={{ color: 'hsl(175 25% 65%)' }}
           >
-            Building smarter futures at the crossroads of{' '}
-            <span style={{ color: 'hsl(158 75% 62%)' }} className="font-semibold">AI</span>,{' '}
-            <span style={{ color: 'hsl(195 90% 65%)' }} className="font-semibold">education</span>, and{' '}
-            <span style={{ color: 'hsl(175 70% 60%)' }} className="font-semibold">engineering</span>.
+            {taglineParts.map((part, i) =>
+              part.color
+                ? <span key={i} style={{ color: part.color }} className="font-semibold">{part.text}</span>
+                : <span key={i}>{part.text}</span>
+            )}
           </p>
 
           {/* CTA buttons */}

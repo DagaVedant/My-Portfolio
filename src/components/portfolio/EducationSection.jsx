@@ -1,26 +1,5 @@
 import RevealSection from './RevealSection';
-import { GraduationCap, BookOpen } from 'lucide-react';
-
-const education = [
-  {
-    degree: 'High School Diploma',
-    school: 'Your High School Name',
-    period: '2021 – 2025',
-    details: 'Focus on STEM, computer science, and mathematics. Active in science clubs and innovation programs.',
-    icon: GraduationCap,
-    color: 'hsl(158 75% 52%)',
-    bg: 'hsla(158, 75%, 52%, 0.08)',
-  },
-  {
-    degree: 'Self-Directed Learning',
-    school: 'Coursera, DeepLearning.AI, Kaggle',
-    period: '2023 – Present',
-    details: 'Independent study in machine learning, AI fundamentals, data science, and audio signal processing.',
-    icon: BookOpen,
-    color: 'hsl(195 90% 55%)',
-    bg: 'hsla(195, 90%, 55%, 0.08)',
-  },
-];
+import { education } from '@/data/portfolio-data';
 
 export default function EducationSection() {
   return (
