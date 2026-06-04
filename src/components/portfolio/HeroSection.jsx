@@ -84,13 +84,13 @@ useEffect(() => {
             <span className="gradient-text">{personal.lastName}</span>
           </h1>
           <p
-            className={`flex items-center gap-1.5 justify-center lg:justify-start text -sm mb-4 transition-all duration-700 delay-200 ${
+            className={`flex items-center gap-1.5 justify-center lg:justify-start text-sm mb-4 transition-all duration-700 delay-200 ${
               mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4' }`}
               style={{color: 'hsl(175 25% 50%)'}}
-            >
-              <span>📍</span>
-              <span>Monroe Township, New Jersey</span>
-            </p>
+          >
+            <span>📍</span>
+            <span>Monroe Township, New Jersey</span>
+          </p>
 
           {/* Tagline */}
           <p
