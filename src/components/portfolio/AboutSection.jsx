@@ -19,8 +19,8 @@ export default function AboutSection() {
             </span>
           </div>
           <h2 className="font-inter font-black text-4xl sm:text-5xl tracking-tight text-foreground mb-6">
-            Where AI meets{' '}
-            <span className="gradient-text">education.</span>
+            All About{' '}
+            <span className="gradient-text">ME.</span>
           </h2>
           <p className="text-lg leading-relaxed max-w-2xl mb-16" style={{ color: 'hsl(175 20% 62%)' }}>
             {aboutBio}

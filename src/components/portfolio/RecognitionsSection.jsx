@@ -18,7 +18,7 @@ export default function RecognitionsSection() {
             </span>
           </div>
           <h2 className="font-inter font-black text-4xl sm:text-5xl tracking-tight text-foreground mb-12">
-            Proud <span className="gradient-text">moments.</span>
+            My <span className="gradient-text">Achievements</span>
           </h2>
         </RevealSection>
 

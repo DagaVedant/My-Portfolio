@@ -18,7 +18,7 @@ export default function TechStackSection() {
             </span>
           </div>
           <h2 className="font-inter font-black text-4xl sm:text-5xl tracking-tight text-foreground mb-12">
-            My <span className="gradient-text">toolkit.</span>
+            Tech <span className="gradient-text">Stack</span>
           </h2>
         </RevealSection>
 

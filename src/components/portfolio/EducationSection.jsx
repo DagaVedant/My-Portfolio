@@ -18,7 +18,7 @@ export default function EducationSection() {
             </span>
           </div>
           <h2 className="font-inter font-black text-4xl sm:text-5xl tracking-tight text-foreground mb-12">
-            Where I&apos;ve <span className="gradient-text">studied.</span>
+            My Education<span className="gradient-text"> Journey</span>
           </h2>
         </RevealSection>
 

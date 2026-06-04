@@ -33,11 +33,11 @@ export default function ContactSection() {
             </div>
 
             <h2 className="font-inter font-black text-3xl sm:text-4xl md:text-5xl tracking-tight text-foreground mb-4">
-              Let&apos;s build something{' '}
-              <span className="gradient-text">together.</span>
+              Connect with {' '}
+              <span className="gradient-text">me!</span>
             </h2>
             <p className="text-lg leading-relaxed max-w-md mx-auto mb-10" style={{ color: 'hsl(175 20% 58%)' }}>
-              I&apos;m always open to conversations about AI, education technology, or interesting collaborations.
+              I love talking about AI, new technologies, or fun project ideas. Contact me through my number or email!
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full max-w-lg mx-auto">
