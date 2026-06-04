@@ -5,15 +5,15 @@ import { personal, taglineParts } from '@/data/portfolio-data';
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false);
 
-const roles = ['AI Engineer', 'ML Developer', 'Full-Stack Developer', 'IoT Tinkerer'];
+const roles = ['AI Engineer', 'ML Developer', 'Full-Stack Dev', 'IoT Tinkerer'];
 const [roleIndex, setRoleIndex] = useState(0);
 const [displayed, setDisplayed] = useState('');
-const [typing, setTyping] = useState(false);
+const [typing, setTyping] = useState(true);
 
 useEffect(() => {
   const current = roles[roleIndex];
   if (typing) {
-    if displayed.length < current.length {
+    if (displayed.length < current.length) {
       const t = setTimeout(() => setDisplayed(current.slice(0, displayed.length + 1)), 80);
       return () => clearTimeout(t);
     } else {
@@ -22,7 +22,7 @@ useEffect(() => {
     }
   } else {
     if (displayed.length > 0) {
-      const t = setTimeout(( => setDisplayed(displayed.slice(0, -1))), 40);
+      const t = setTimeout(() => setDisplayed(displayed.slice(0, -1)), 40);
       return () => clearTimeout(t);
     } else {
       setRoleIndex((i) => (i+1) % roles.length);
@@ -61,15 +61,6 @@ useEffect(() => {
         }}
       />
 
-      <p
-        className={`text-2x1 sm:text-2x1 font-mono mb-4 transition-all duration-700 delay-200 ${
-          mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
-        style={{color: 'hsl(175 25% 50%)'}}
-      >
-        {displayed}
-        <span className="animate-pulse">|</span>
-      </p>
-
       <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between w-full gap-12">
         {/* Left — text content */}
         <div className="text-center lg:text-left flex-1">
@@ -90,6 +81,15 @@ useEffect(() => {
           >
             <span>📍</span>
             <span>Monroe Township, New Jersey</span>
+          </p>
+
+          {/* Typewriter */}
+          <p
+            className={`text-xl sm:text-2xl font-mono mb-6 transition-all duration-700 delay-250 ${
+              mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+            style={{ color: 'hsl(158 75% 62%)' }}
+          >
+            {displayed}<span className="animate-pulse">|</span>
           </p>
 
           {/* Tagline */}
