@@ -18,7 +18,7 @@ export default function HobbiesSection() {
             </span>
           </div>
           <h2 className="font-inter font-black text-4xl sm:text-5xl tracking-tight text-foreground mb-12">
-            My Hobbies<span className="gradient-text">Hobbies</span>
+            My <span className="gradient-text">Hobbies</span>
           </h2>
         </RevealSection>
 
