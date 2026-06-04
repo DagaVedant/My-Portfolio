@@ -5,6 +5,32 @@ import { personal, taglineParts } from '@/data/portfolio-data';
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false);
 
+const roles = ['AI Engineer', 'ML Developer', 'Full-Stack Developer', 'IoT Tinkerer'];
+const [roleIndex, setRoleIndex] = useState(0);
+const [displayed, setDisplayed] = useState('');
+const [typing, setTyping] = useState(false);
+
+useEffect(() => {
+  const current = roles[roleIndex];
+  if (typing) {
+    if displayed.length < current.length {
+      const t = setTimeout(() => setDisplayed(current.slice(0, displayed.length + 1)), 80);
+      return () => clearTimeout(t);
+    } else {
+      const t = setTimeout(() => setTyping(false), 1000);
+      return () => clearTimeout(t);
+    }
+  } else {
+    if (displayed.length > 0) {
+      const t = setTimeout(( => setDisplayed(displayed.slice(0, -1))), 40);
+      return () => clearTimeout(t);
+    } else {
+      setRoleIndex((i) => (i+1) % roles.length);
+      setTyping(true);
+    }
+  }
+}, [displayed, typing, roleIndex]);
+
   useEffect(() => {
     const timer = setTimeout(() => setMounted(true), 100);
     return () => clearTimeout(timer);
@@ -35,6 +61,15 @@ export default function HeroSection() {
         }}
       />
 
+      <p
+        className={`text-2x1 sm:text-2x1 font-mono mb-4 transition-all duration-700 delay-200 ${
+          mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+        style={{color: 'hsl(175 25% 50%)'}}
+      >
+        {displayed}
+        <span className="animate-pulse">|</span>
+      </p>
+
       <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between w-full gap-12">
         {/* Left — text content */}
         <div className="text-center lg:text-left flex-1">
@@ -48,6 +83,14 @@ export default function HeroSection() {
             <br />
             <span className="gradient-text">{personal.lastName}</span>
           </h1>
+          <p
+            className={`flex items-center gap-1.5 justify-center lg:justify-start text -sm mb-4 transition-all duration-700 delay-200 ${
+              mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4' }`}
+              style={{color: 'hsl(175 25% 50%)'}}
+            >
+              <span>📍</span>
+              <span>Monroe Township, New Jersey</span>
+            </p>
 
           {/* Tagline */}
           <p
@@ -101,7 +144,6 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Right — rotating word wheel */}
         <div
           className={`flex-shrink-0 transition-all duration-700 delay-[500ms] ${
             mounted ? 'opacity-100 scale-100' : 'opacity-0 scale-90'

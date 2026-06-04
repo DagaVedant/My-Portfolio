@@ -8,6 +8,15 @@ import {
   Activity, Mic, Shield, MapPin, Bot,
 } from 'lucide-react';
 
+/** @param {any} props */
+const TennisBallIcon = (props) => (
+  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="12" cy="12" r="10" fill="#c8e619" />
+    <path d="M9 3C5.5 5.5 4 8.5 4 12C4 15.5 5.5 18.5 9 21" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
+    <path d="M15 3C18.5 5.5 20 8.5 20 12C20 15.5 18.5 18.5 15 21" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
+  </svg>
+);
+
 export const personal = {
   firstName: 'Vedant',
   lastName: 'Daga',
@@ -237,7 +246,7 @@ export const projects = [
 // ── Education ─────────────────────────────────────────────────
 export const education = [
   {
-    degree: '2025-2029',
+    degree: 'Freshman at Edison Academy Magnet School',
     school: 'Edison Academy Magnet School',
     period: '2025 – 2029',
     details: 'Middlesex County\'s most Elite public high school.',
@@ -274,9 +283,9 @@ export const hobbies = [
     bg: 'hsla(158, 75%, 52%, 0.08)',
   },
   {
-    icon: Brain,
-    label: 'AI & ML',
-    description: 'Training new models, learning about AI innovations, and reading research papers',
+    icon: TennisBallIcon,
+    label: 'Tennis',
+    description: 'I love playing tennis with friends and for school. Season just ended and I was JV first as a freshman. YAY!',
     color: 'hsl(195 90% 55%)',
     bg: 'hsla(195, 90%, 55%, 0.08)',
   },
@@ -290,7 +299,7 @@ export const hobbies = [
   {
     icon: BookMarked,
     label: 'Reading',
-    description: 'I love reading anything sci-fi, mystery, or just somehting fantasy. Favorite Series: Inheritance Games by Jennifer Lynn Barnes',
+    description: 'I love reading anything sci-fi, mystery, or just something fantasy. Favorite Series: Inheritance Games by Jennifer Lynn Barnes',
     color: 'hsl(145 65% 52%)',
     bg: 'hsla(145, 65%, 52%, 0.08)',
   },
