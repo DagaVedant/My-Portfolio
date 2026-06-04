@@ -88,6 +88,16 @@ export default function HeroSection() {
             >
               Contact Me!
             </a>
+
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-10 py-4 rounded-xl font-inter font-semibold text-lg border border-primary/30 transition-all duration-300 hover:border-primary/60 hover:bg-primary/10"
+              style={{ color: 'hsl(158 75% 62%)' }}
+            >
+              Check out my Resume!
+            </a>
           </div>
         </div>
 
