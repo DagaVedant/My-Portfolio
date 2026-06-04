@@ -1,8 +1,8 @@
-# Vedant Daga — Portfolio
+# My Portfolio
 
 A personal portfolio site for me, an aspiring AI/ML engineer and full-stack developer, showing my projects across deep learning, full-stack web, and IoT.
 
-![Portfolio preview](./preview.png)
+![Portfolio preview](public/preview.png)
 
 **[View live site](https://dagavedant.github.io/My-Portfolio/)**
 
