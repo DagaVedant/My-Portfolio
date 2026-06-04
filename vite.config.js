@@ -4,7 +4,7 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: 'https://github.com/DagaVedant/My-Portfolio',
+  base: '/My-Portfolio/',
   plugins: [react()],
   resolve: {
     alias: {

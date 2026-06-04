@@ -1,223 +1,256 @@
-// ════════════════════════════════════════════════════════════
-//  PORTFOLIO DATA — edit this file to personalize your site
-// ════════════════════════════════════════════════════════════
-
 import {
-  Brain, Users, Lightbulb, BarChart3,
+  Brain, Lightbulb, BarChart3,
   Mail, Phone, Linkedin, Github,
-  Zap, BookOpen, Music, Globe,
+  Zap, BookOpen, Globe,
   GraduationCap,
-  Headphones, Camera, Gamepad2, BookMarked, Mountain, Microscope,
-  Trophy, Star, Medal, Flame,
-  Target, Award,
+  Headphones, Gamepad2, BookMarked, Mountain, Microscope,
+  Trophy, Target,
+  Activity, Mic, Shield, MapPin, Bot,
 } from 'lucide-react';
 
-// ── Identity ─────────────────────────────────────────────────
 export const personal = {
-  firstName: 'Deepak',
+  firstName: 'Vedant',
   lastName: 'Daga',
-  initials: 'DD',
+  initials: 'VD',
 };
 
-// ── Hero tagline (parts with optional highlight color) ────────
 export const taglineParts = [
-  { text: 'Building smarter futures at the crossroads of ' },
-  { text: 'AI', color: 'hsl(158 75% 62%)' },
+  { text: 'Building across ' },
+  { text: 'AI/ML', color: 'hsl(158 75% 62%)' },
   { text: ', ' },
-  { text: 'education', color: 'hsl(195 90% 65%)' },
+  { text: 'full-stack', color: 'hsl(195 90% 65%)' },
   { text: ', and ' },
-  { text: 'engineering', color: 'hsl(175 70% 60%)' },
-  { text: '.' },
+  { text: 'IoT', color: 'hsl(175 70% 60%)' },
 ];
 
-// ── Rotating word wheel ───────────────────────────────────────
 export const rotatingWords = [
-  'AI Builder',
-  'Educator',
-  'Engineer',
-  'IoT Teacher',
-  'ML Explorer',
-  'Innovator',
+  'Builder',
+  'AI Engineer',
+  'ML Developer',
+  'Full-Stack Dev',
+  'IoT Tinkerer',
   'Problem Solver',
-  'Workshop Leader',
+  'Innovator',
 ];
 
-// ── Contact links ─────────────────────────────────────────────
 export const contactLinks = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'deepakdaga@gmail.com',
-    href: 'mailto:deepakdaga@gmail.com',
+    value: 'vedantdaga04@gmail.com',
+    href: 'mailto:vedantdaga04@gmail.com',
   },
   {
     icon: Phone,
     label: 'Phone',
-    value: 'TODO: your phone number',
-    href: 'tel:+10000000000',
+    value: '+1 (609) 608-8060',
+    href: 'tel:+16096088060',
   },
   {
-    icon: Linkedin,
-    label: 'LinkedIn',
-    value: 'TODO: linkedin.com/in/your-profile',
-    href: 'https://linkedin.com/in/TODO',
+    icon: Globe,
+    label: 'Devpost',
+    value: 'https://devpost.com/Vedant-Daga',
+    href: 'https://devpost.com/Vedant-Daga',
   },
   {
     icon: Github,
     label: 'GitHub',
-    value: 'TODO: github.com/your-username',
-    href: 'https://github.com/TODO',
+    value: 'github.com/DagaVedant',
+    href: 'https://github.com/DagaVedant',
   },
 ];
 
-// ── About section ─────────────────────────────────────────────
-export const aboutBio = `I'm passionate about using technology to create meaningful learning experiences.
-My work spans from teaching IoT fundamentals to kids, to building AI-powered tools
-that make education more engaging and accessible. I believe the best technology
-serves people — and I'm focused on proving that.`;
+export const aboutBio = `Aspiring software engineer constantly building, learning, and shipping. I work on AI/ML, full-stack development, IoT, and automation, and I'm always picking up new technologies.`;
 
 export const aboutHighlights = [
   {
     icon: Brain,
     title: 'AI & Machine Learning',
     description:
-      'Exploring applied ML with a focus on audio processing, spectrogram-based models, and real-world AI systems.',
+      'Building deep learning systems — from LSTM/Transformer models for finance to CNNs for character recognition and NLP pipelines.',
     color: 'hsl(158 75% 52%)',
     bg: 'hsla(158, 75%, 52%, 0.08)',
   },
   {
-    icon: Users,
-    title: 'Education & Teaching',
+    icon: Zap,
+    title: 'Full-Stack Development',
     description:
-      '2+ years teaching IoT to kids, designing curricula, and running workshops that make technology accessible.',
+      'Shipping end-to-end web apps with React, Node.js, FastAPI, and TypeScript — from interactive dashboards to AI-powered platforms.',
     color: 'hsl(195 90% 55%)',
     bg: 'hsla(195, 90%, 55%, 0.08)',
   },
   {
-    icon: Lightbulb,
-    title: 'Program Leadership',
+    icon: Microscope,
+    title: 'IoT & Embedded Systems',
     description:
-      'Managed finances, logistics, and strategy for a 4-H Innovation Lab in India — from fundraising to execution.',
+      'Working with Arduino and embedded hardware to build real-world connected systems and automation tools.',
     color: 'hsl(175 70% 52%)',
     bg: 'hsla(175, 70%, 52%, 0.08)',
   },
   {
-    icon: BarChart3,
-    title: 'Systems Thinking',
+    icon: Lightbulb,
+    title: 'Always Shipping',
     description:
-      'Building and improving educational program structures, club operations, and scalable learning frameworks.',
+      'From healthcare optimization platforms to open-source autoclickers — constantly building, iterating, and releasing projects.',
     color: 'hsl(145 65% 52%)',
     bg: 'hsla(145, 65%, 52%, 0.08)',
   },
 ];
 
-// ── Tech stack ────────────────────────────────────────────────
 export const techCategories = [
   {
     category: 'Languages',
     color: 'hsl(158 75% 52%)',
     bg: 'hsla(158, 75%, 52%, 0.08)',
     border: 'hsla(158, 75%, 52%, 0.2)',
-    items: ['Python', 'JavaScript', 'HTML/CSS', 'Bash'],
+    items: ['Python', 'TypeScript', 'JavaScript', 'HTML/CSS', 'C/C++'],
   },
   {
     category: 'AI / ML',
     color: 'hsl(195 90% 55%)',
     bg: 'hsla(195, 90%, 55%, 0.08)',
     border: 'hsla(195, 90%, 55%, 0.2)',
-    items: ['NumPy', 'Pandas', 'Scikit-learn', 'TensorFlow', 'Librosa'],
+    items: ['PyTorch', 'scikit-learn', 'Transformers', 'NumPy', 'Pandas', 'WandB', 'Jupyter'],
   },
   {
-    category: 'Hardware & IoT',
+    category: 'Web & Backend',
     color: 'hsl(175 70% 52%)',
     bg: 'hsla(175, 70%, 52%, 0.08)',
     border: 'hsla(175, 70%, 52%, 0.2)',
-    items: ['Arduino', 'Raspberry Pi', 'Sensors & Actuators', 'Breadboarding'],
+    items: ['React', 'Node.js', 'FastAPI', 'Streamlit', 'Tailwind CSS'],
   },
   {
-    category: 'Tools & Platforms',
+    category: 'AI Tools & APIs',
     color: 'hsl(145 65% 52%)',
     bg: 'hsla(145, 65%, 52%, 0.08)',
     border: 'hsla(145, 65%, 52%, 0.2)',
-    items: ['Git & GitHub', 'VS Code', 'Jupyter Notebooks', 'Google Colab'],
+    items: ['OpenAI API', 'Ollama', 'OR-Tools', 'SimPy'],
   },
   {
-    category: 'Learning Next',
+    category: 'Hardware & IoT',
     color: 'hsl(210 80% 62%)',
     bg: 'hsla(210, 80%, 62%, 0.08)',
     border: 'hsla(210, 80%, 62%, 0.2)',
-    items: ['PyTorch', 'LLM Fine-tuning', 'React', 'Docker', 'LangChain'],
+    items: ['Arduino', 'IoT', 'Raspberry Pi', 'Embedded Systems'],
+  },
+  {
+    category: 'Learning Next',
+    color: 'hsl(165 70% 55%)',
+    bg: 'hsla(165, 70%, 55%, 0.08)',
+    border: 'hsla(165, 70%, 55%, 0.2)',
+    items: ['Deep Learning', 'LLM Fine-tuning', 'Reinforcement Learning', 'AI Fundamentals'],
     dashed: true,
-    icon: Target,
   },
 ];
 
-// ── Projects ──────────────────────────────────────────────────
 export const projects = [
   {
-    icon: Zap,
-    title: 'AI Learning Systems',
-    github: null, // e.g. 'https://github.com/deepakdaga/repo'
-    image: null,  // e.g. 'https://...' or import from assets
+    icon: Activity,
+    title: 'PulseFlow-AI',
+    github: 'https://github.com/DagaVedant/PulseFlow-AI',
+    image: null,
     description:
-      'Developing intelligent tutoring tools that adapt to individual learning patterns using machine learning models and real-time feedback loops.',
-    tags: ['Machine Learning', 'Python', 'Education'],
+      'Healthcare operations platform combining optimization, simulation, forecasting, and AI to proactively identify and resolve hospital bottlenecks.',
+    tags: ['OR-Tools', 'SimPy', 'AI', 'Healthcare', 'Python'],
     accent: 'hsl(158 75% 52%)',
     accentBg: 'hsla(158, 75%, 52%, 0.08)',
   },
   {
-    icon: BookOpen,
-    title: 'IoT Education Platform',
-    github: null,
+    icon: BarChart3,
+    title: 'AI Portfolio Analyzer',
+    github: 'https://github.com/DagaVedant/AI-Portfolio-Analyzer',
     image: null,
     description:
-      'Designed and delivered a hands-on IoT curriculum for young learners, covering sensors, microcontrollers, and connected systems over 2 years.',
-    tags: ['IoT', 'Teaching', 'Curriculum Design'],
+      'Deep learning platform using LSTM and Transformer models to analyze returns, volatility, downside risk, and market sentiment across 46 stocks.',
+    tags: ['LSTM', 'Transformers', 'PyTorch', 'Finance', 'Deep Learning'],
     accent: 'hsl(195 90% 55%)',
     accentBg: 'hsla(195, 90%, 55%, 0.08)',
   },
   {
-    icon: Music,
-    title: 'Audio ML Research',
-    github: null,
+    icon: Bot,
+    title: 'FRC Chatbot — Team 10600',
+    github: 'https://github.com/DagaVedant/FRC-Chatbot-Team-10600',
     image: null,
     description:
-      'Exploring spectrogram-based deep learning models for audio classification and signal processing applications.',
-    tags: ['Deep Learning', 'Audio', 'Research'],
+      'RAG-powered AI pit assistant for an FRC robotics team using FastAPI, Ollama, and hybrid semantic search to answer real-time competition questions.',
+    tags: ['RAG', 'FastAPI', 'Ollama', 'Robotics', 'Python'],
     accent: 'hsl(175 70% 52%)',
     accentBg: 'hsla(175, 70%, 52%, 0.08)',
   },
   {
-    icon: Globe,
-    title: '4-H Innovation Lab',
-    github: null,
+    icon: Mic,
+    title: 'VoiceGPT',
+    github: 'https://github.com/DagaVedant/VoiceGPT',
     image: null,
     description:
-      'Led financial planning, logistics, and workshop execution for an innovation lab in India — bridging technology education with community impact.',
-    tags: ['Leadership', 'Operations', 'Impact'],
+      'Voice-controlled GPT assistant with speech recognition, text-to-speech, and image generation. Showcased at Maker Fair 2024.',
+    tags: ['OpenAI API', 'Speech Recognition', 'TTS', 'Python'],
     accent: 'hsl(145 65% 52%)',
     accentBg: 'hsla(145, 65%, 52%, 0.08)',
+  },
+  {
+    icon: Brain,
+    title: 'EMNIST Character Classifier',
+    github: 'https://github.com/DagaVedant/EMNIST-Character-Classifier',
+    image: null,
+    description:
+      'CNN trained on the EMNIST Balanced dataset using PyTorch, Flask, and WandB — with an interactive drawing interface for real-time predictions.',
+    tags: ['CNN', 'PyTorch', 'Flask', 'WandB', 'Computer Vision'],
+    accent: 'hsl(210 80% 62%)',
+    accentBg: 'hsla(210, 80%, 62%, 0.08)',
+  },
+  {
+    icon: MapPin,
+    title: 'California House Price Predictor',
+    github: 'https://github.com/DagaVedant/California-House-Price-Predictor',
+    image: null,
+    description:
+      'XGBoost-powered housing price prediction platform with interactive mapping and confidence intervals.',
+    tags: ['XGBoost', 'scikit-learn', 'Streamlit', 'ML', 'Python'],
+    accent: 'hsl(165 70% 50%)',
+    accentBg: 'hsla(165, 70%, 50%, 0.08)',
+  },
+  {
+    icon: Shield,
+    title: 'Spam Message AI Classifier',
+    github: 'https://github.com/DagaVedant/Spam-Message-AI-Classifier',
+    image: null,
+    description:
+      'NLP spam detector using Multinomial Naive Bayes and custom preprocessing pipelines to classify messages with high accuracy.',
+    tags: ['NLP', 'Naive Bayes', 'scikit-learn', 'Python'],
+    accent: 'hsl(158 75% 52%)',
+    accentBg: 'hsla(158, 75%, 52%, 0.08)',
+  },
+  {
+    icon: Globe,
+    title: 'Lección 7 de Español',
+    github: 'https://github.com/DagaVedant/Leccion-7-de-Espanol',
+    image: null,
+    description:
+      'Interactive Spanish learning web app built with React, Node.js, and TypeScript.',
+    tags: ['React', 'Node.js', 'TypeScript', 'Education'],
+    accent: 'hsl(175 70% 52%)',
+    accentBg: 'hsla(175, 70%, 52%, 0.08)',
   },
 ];
 
 // ── Education ─────────────────────────────────────────────────
 export const education = [
   {
-    degree: 'TODO: Your Degree / Diploma',
-    school: 'TODO: Your School / University',
-    period: 'TODO: e.g. 2021 – 2025',
-    details:
-      'TODO: Brief description of your studies, focus areas, and any notable activities.',
+    degree: '2025-2029',
+    school: 'Edison Academy Magnet School',
+    period: '2025 – 2029',
+    details: 'Middlesex County\'s most Elite public high school.',
     icon: GraduationCap,
     color: 'hsl(158 75% 52%)',
     bg: 'hsla(158, 75%, 52%, 0.08)',
   },
   {
-    degree: 'Self-Directed Learning',
-    school: 'Coursera, DeepLearning.AI, Kaggle',
+    degree: 'Independent Learning',
+    school: 'Online Courses and Personal Projects',
     period: '2023 – Present',
     details:
-      'Independent study in machine learning, AI fundamentals, data science, and audio signal processing.',
+      'Independent study in AI/ML, deep learning, full-stack development, and embedded systems through hands-on projects.',
     icon: BookOpen,
     color: 'hsl(195 90% 55%)',
     bg: 'hsla(195, 90%, 55%, 0.08)',
@@ -225,99 +258,53 @@ export const education = [
 ];
 
 // ── Certifications ────────────────────────────────────────────
-export const certifications = [
-  {
-    title: 'AI for Everyone',
-    issuer: 'DeepLearning.AI / Coursera',
-    year: '2024',
-    color: 'hsl(158 75% 52%)',
-    bg: 'hsla(158, 75%, 52%, 0.08)',
-    border: 'hsla(158, 75%, 52%, 0.25)',
-  },
-  {
-    title: 'Python for Data Science',
-    issuer: 'IBM / Coursera',
-    year: '2024',
-    color: 'hsl(195 90% 55%)',
-    bg: 'hsla(195, 90%, 55%, 0.08)',
-    border: 'hsla(195, 90%, 55%, 0.25)',
-  },
-  {
-    title: 'IoT Fundamentals',
-    issuer: 'Cisco Networking Academy',
-    year: '2023',
-    color: 'hsl(175 70% 52%)',
-    bg: 'hsla(175, 70%, 52%, 0.08)',
-    border: 'hsla(175, 70%, 52%, 0.25)',
-  },
-  {
-    title: 'Machine Learning Specialization',
-    issuer: 'Stanford / Coursera',
-    year: '2024',
-    color: 'hsl(145 65% 52%)',
-    bg: 'hsla(145, 65%, 52%, 0.08)',
-    border: 'hsla(145, 65%, 52%, 0.25)',
-  },
-];
+/** @type {never[]} */
+export const certifications = [];
 
-export const certificationsInProgress = [
-  {
-    title: 'Deep Learning Specialization',
-    issuer: 'DeepLearning.AI',
-    color: 'hsl(145 65% 52%)',
-    bg: 'hsla(145, 65%, 52%, 0.08)',
-    border: 'hsla(145, 65%, 52%, 0.25)',
-  },
-  {
-    title: 'TensorFlow Developer Certificate',
-    issuer: 'Google',
-    color: 'hsl(158 75% 52%)',
-    bg: 'hsla(158, 75%, 52%, 0.08)',
-    border: 'hsla(158, 75%, 52%, 0.25)',
-  },
-];
+/** @type {never[]} */
+export const certificationsInProgress = [];
 
 // ── Hobbies ───────────────────────────────────────────────────
 export const hobbies = [
   {
-    icon: Headphones,
-    label: 'Music & Audio',
-    description: 'Deep love for audio — from listening to analyzing sound with ML.',
+    icon: Microscope,
+    label: 'Tinkering',
+    description: 'Taking things apart, building circuits, and experimenting with hardware.',
     color: 'hsl(158 75% 52%)',
     bg: 'hsla(158, 75%, 52%, 0.08)',
   },
   {
-    icon: Microscope,
-    label: 'Tinkering',
-    description: 'Taking things apart, building circuits, experimenting with hardware.',
+    icon: Brain,
+    label: 'AI & ML',
+    description: 'Training new models, learning about AI innovations, and reading research papers',
     color: 'hsl(195 90% 55%)',
     bg: 'hsla(195, 90%, 55%, 0.08)',
   },
   {
-    icon: BookMarked,
-    label: 'Reading',
-    description: 'Science, technology history, and the occasional sci-fi novel.',
+    icon: Gamepad2,
+    label: 'Gaming',
+    description: 'Playing strategy games or really anything that involves thinking and mathematics.',
     color: 'hsl(175 70% 52%)',
     bg: 'hsla(175, 70%, 52%, 0.08)',
   },
   {
-    icon: Gamepad2,
-    label: 'Gaming',
-    description: 'Strategy games and anything with good world-building.',
+    icon: BookMarked,
+    label: 'Reading',
+    description: 'I love reading anything sci-fi, mystery, or just somehting fantasy. Favorite Series: Inheritance Games by Jennifer Lynn Barnes',
     color: 'hsl(145 65% 52%)',
     bg: 'hsla(145, 65%, 52%, 0.08)',
   },
   {
     icon: Mountain,
     label: 'Outdoors',
-    description: 'Hiking, exploring, and getting away from screens (sometimes).',
+    description: 'I love hiking, and just exploring nature. Best trail of all time is definitely Fairy Falls Trail in Yellowstone.',
     color: 'hsl(165 70% 50%)',
     bg: 'hsla(165, 70%, 50%, 0.08)',
   },
   {
-    icon: Camera,
-    label: 'Photography',
-    description: 'Capturing moments and playing with light and composition.',
+    icon: Headphones,
+    label: 'Music',
+    description: 'Love playing music, when on the bus, chilling in my room, and coding.',
     color: 'hsl(210 75% 58%)',
     bg: 'hsla(210, 75%, 58%, 0.08)',
   },
@@ -327,38 +314,46 @@ export const hobbies = [
 export const recognitions = [
   {
     icon: Trophy,
-    title: '4-H Innovation Award',
+    title: 'Maker Fair 2024',
     description:
-      'Recognized for outstanding leadership and program development at the 4-H Innovation Lab in India.',
+      'Showcased VoiceGPT, a voice-controlled GPT assistant with speech recognition, text-to-speech, and image generation. Check my github to see the project and test it for yourself',
     year: '2024',
     color: 'hsl(158 75% 52%)',
     bg: 'hsla(158, 75%, 52%, 0.08)',
   },
+  
+  /*
   {
-    icon: Star,
-    title: 'STEM Workshop Excellence',
-    description:
-      'Acknowledged for designing and running impactful IoT workshops reaching 50+ students.',
-    year: '2023',
-    color: 'hsl(195 90% 55%)',
-    bg: 'hsla(195, 90%, 55%, 0.08)',
+    icon: Trophy,
+    title: 'Award 1',
+    description: 'Placeholder for another award or recognition.',
+    year: '2024',
+    color: 'hsl(210 70% 50%)',
+    bg: 'hsla(210, 70%, 50%, 0.08)',
   },
   {
-    icon: Medal,
-    title: 'Club Leadership Recognition',
-    description:
-      'Award for restructuring club operations and growing active membership by 3x.',
-    year: '2023',
-    color: 'hsl(175 70% 52%)',
-    bg: 'hsla(175, 70%, 52%, 0.08)',
+    icon: Trophy,
+    title: 'Award 2',
+    description: 'Placeholder for another award or recognition.',
+    year: '2024',
+    color: 'hsl(45 85% 55%)',
+    bg: 'hsla(45, 85%, 55%, 0.08)',
   },
   {
-    icon: Flame,
-    title: 'Top Fundraiser',
-    description:
-      'Led fundraising campaigns that funded lab equipment and educational resources.',
-    year: '2022',
-    color: 'hsl(145 65% 52%)',
-    bg: 'hsla(145, 65%, 52%, 0.08)',
+    icon: Trophy,
+    title: 'Award 3',
+    description: 'Placeholder for another award or recognition.',
+    year: '2024',
+    color: 'hsl(320 65% 55%)',
+    bg: 'hsla(320, 65%, 55%, 0.08)',
   },
+  {
+    icon: Trophy,
+    title: 'Award 4',
+    description: 'Placeholder for another award or recognition.',
+    year: '2024',
+    color: 'hsl(80 65% 50%)',
+    bg: 'hsla(80, 65%, 50%, 0.08)',
+  },
+  */
 ];
