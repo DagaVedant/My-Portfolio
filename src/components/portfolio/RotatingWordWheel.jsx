@@ -17,8 +17,8 @@ export default function RotatingWordWheel() {
   }, []);
 
   // Build rotating circle of words
-  const radius = 110;
-  const centerSize = 240;
+  const radius = 240;
+  const centerSize = 520;
   const totalWords = words.length;
 
   return (
@@ -41,7 +41,7 @@ export default function RotatingWordWheel() {
               }}
             >
               <span
-                className={`text-[10px] font-mono font-semibold tracking-widest uppercase whitespace-nowrap transition-all duration-500 ${
+                className={`text-[14px] font-mono font-semibold tracking-widest uppercase whitespace-nowrap transition-all duration-500 ${
                   isActive
                     ? 'text-primary opacity-100 scale-110'
                     : 'text-muted-foreground/50 opacity-60'
@@ -68,16 +68,16 @@ export default function RotatingWordWheel() {
       <div
         className="absolute rounded-full"
         style={{
-          width: 100,
-          height: 100,
-          left: centerSize / 2 - 50,
-          top: centerSize / 2 - 50,
+          width: 220,
+          height: 220,
+          left: centerSize / 2 - 110,
+          top: centerSize / 2 - 110,
           background: 'radial-gradient(circle, hsla(158,75%,52%,0.15) 0%, transparent 70%)',
         }}
       />
 
       {/* Center word display */}
-      <div className="relative z-10 w-28 h-28 rounded-full border border-primary/30 flex items-center justify-center"
+      <div className="relative z-10 w-64 h-64 rounded-full border border-primary/30 flex items-center justify-center"
            style={{ background: 'radial-gradient(circle, hsla(175,60%,12%,0.9), hsla(185,50%,9%,0.95))' }}>
         <div
           className={`text-center transition-all duration-400 ${
@@ -85,7 +85,7 @@ export default function RotatingWordWheel() {
           }`}
           style={{ transition: 'all 0.3s ease' }}
         >
-          <span className="gradient-text font-inter font-bold text-sm leading-tight block text-center px-2">
+          <span className="gradient-text font-inter font-bold text-2xl leading-tight block text-center px-4">
             {words[currentIndex]}
           </span>
         </div>
