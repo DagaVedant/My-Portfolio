@@ -78,7 +78,7 @@ export default function HeroSection() {
                 color: 'hsl(170 60% 6%)',
               }}
             >
-              See my work →
+              See my projects!
             </a>
             <a
               href="#contact"
@@ -86,7 +86,7 @@ export default function HeroSection() {
               className="px-10 py-4 rounded-xl font-inter font-semibold text-lg border border-primary/30 transition-all duration-300 hover:border-primary/60 hover:bg-primary/10"
               style={{ color: 'hsl(158 75% 62%)' }}
             >
-              Get in touch
+              Contact Me!
             </a>
           </div>
         </div>
