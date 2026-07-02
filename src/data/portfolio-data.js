@@ -4,7 +4,6 @@ import {
   BarChart3,
   Mail,
   Phone,
-  Linkedin,
   Github,
   Zap,
   BookOpen,
@@ -15,7 +14,6 @@ import {
   BookMarked,
   Mountain,
   Microscope,
-  Target,
   Activity,
   Mic,
   Shield,
@@ -85,14 +83,14 @@ export const contactLinks = [
   },
 ];
 
-export const aboutBio = `Aspiring software engineer constantly building, learning, and shipping. I work on AI/ML, full-stack development, IoT, and automation, and I'm always picking up new technologies.`;
+export const aboutBio = `I'm always building something, that's kind of just my whole thing. Mostly AI/ML, full-stack, and IoT, and I'm constantly picking up new tools because there's always something new worth messing with.`;
 
 export const aboutHighlights = [
   {
     icon: Brain,
     title: "AI & Machine Learning",
     description:
-      "Building deep learning systems — from LSTM/Transformer models for finance to CNNs for character recognition and NLP pipelines.",
+      "I build deep learning models, everything from LSTMs and Transformers for finance to CNNs that read handwriting, plus NLP pipelines.",
     color: "hsl(158 75% 52%)",
     bg: "hsla(158, 75%, 52%, 0.08)",
   },
@@ -100,7 +98,7 @@ export const aboutHighlights = [
     icon: Zap,
     title: "Full-Stack Development",
     description:
-      "Shipping end-to-end web apps with React, Node.js, FastAPI, and TypeScript — from interactive dashboards to AI-powered platforms.",
+      "I ship full web apps with React, Node.js, FastAPI, and TypeScript, everything from dashboards to AI-powered platforms.",
     color: "hsl(195 90% 55%)",
     bg: "hsla(195, 90%, 55%, 0.08)",
   },
@@ -108,7 +106,7 @@ export const aboutHighlights = [
     icon: Microscope,
     title: "IoT & Embedded Systems",
     description:
-      "Working with Arduino and embedded hardware to build real-world connected systems and automation tools.",
+      "I mess around with Arduino and embedded hardware to build connected systems and automate stuff.",
     color: "hsl(175 70% 52%)",
     bg: "hsla(175, 70%, 52%, 0.08)",
   },
@@ -116,7 +114,7 @@ export const aboutHighlights = [
     icon: Lightbulb,
     title: "Always Shipping",
     description:
-      "From healthcare optimization platforms to open-source autoclickers — constantly building, iterating, and releasing projects.",
+      "From hospital optimization platforms to random open-source autoclickers, I'm always building something and putting it out there.",
     color: "hsl(145 65% 52%)",
     bg: "hsla(145, 65%, 52%, 0.08)",
   },
@@ -189,7 +187,7 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/DagaVedant/PulseFlow-AI/main/frontend/public/pages/Page%204.png",
     description:
-      "Healthcare operations platform combining optimization, simulation, forecasting, and AI to proactively identify and resolve hospital bottlenecks.",
+      "A healthcare ops platform that combines optimization, simulation, forecasting, and AI to catch hospital bottlenecks before they turn into real problems.",
     tags: ["OR-Tools", "SimPy", "AI", "Healthcare", "Python"],
     accent: "hsl(158 75% 52%)",
     accentBg: "hsla(158, 75%, 52%, 0.08)",
@@ -200,7 +198,7 @@ export const projects = [
     github: "https://github.com/DagaVedant/AI-Portfolio-Analyzer",
     image: `${import.meta.env.BASE_URL}images/ai-portfolio-analyzer.png`,
     description:
-      "Deep learning platform that trains LSTM and Transformer models on 46 stocks to predict returns, volatility, and downside risk — with sentiment analysis, portfolio optimization, and a full backtesting engine.",
+      "Trains LSTM and Transformer models on 46 stocks to predict returns, volatility, and downside risk. Also does sentiment analysis, portfolio optimization, and has a full backtesting engine.",
     tags: ["LSTM", "Transformers", "PyTorch", "Backtesting", "Finance"],
     accent: "hsl(195 90% 55%)",
     accentBg: "hsla(195, 90%, 55%, 0.08)",
@@ -212,18 +210,18 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/DagaVedant/GardenBuddy/main/demo/demo_website.png",
     description:
-      "Real-time Raspberry Pi garden monitor with dual AI — a custom LSTM classifier plus a local Ollama LLM — surfacing live soil, temperature, humidity, and light insights on a React dashboard.",
+      "A Raspberry Pi garden monitor running two AI models at once, a custom LSTM classifier and a local Ollama LLM, showing live soil, temperature, humidity, and light data on a React dashboard.",
     tags: ["Raspberry Pi", "LSTM", "Ollama", "IoT", "React"],
     accent: "hsl(135 60% 48%)",
     accentBg: "hsla(135, 60%, 48%, 0.08)",
   },
   {
     icon: Bot,
-    title: "FRC Chatbot — Team 10600",
+    title: "FRC Chatbot: Team 10600",
     github: "https://github.com/DagaVedant/FRC-Chatbot-Team-10600",
     image: `${import.meta.env.BASE_URL}images/frc-chatbot.png`,
     description:
-      "Avocado — an AI pit assistant for FRC Team 10600 built with FastAPI, Ollama, and a hybrid TF-IDF + semantic RAG system. Answers questions about the robot, team, and game manual using local LLMs with conversation memory.",
+      "Meet Avocado, an AI pit assistant for FRC Team 10600. Built with FastAPI, Ollama, and a hybrid TF-IDF plus semantic RAG system, it answers questions about our robot, team, and the game manual, and actually remembers the conversation.",
     tags: ["RAG", "FastAPI", "Ollama", "Robotics", "Python"],
     accent: "hsl(175 70% 52%)",
     accentBg: "hsla(175, 70%, 52%, 0.08)",
@@ -234,7 +232,7 @@ export const projects = [
     github: "https://github.com/DagaVedant/VoiceGPT",
     image: `${import.meta.env.BASE_URL}images/voicegpt-logo.png`,
     description:
-      "Voice-controlled GPT assistant with speech recognition, text-to-speech, and image generation. Showcased at Maker Fair 2024.",
+      "A voice-controlled GPT assistant with speech recognition, text-to-speech, and image generation. I showed it off at Maker Fair 2024.",
     tags: ["OpenAI API", "Speech Recognition", "TTS", "Python"],
     accent: "hsl(145 65% 52%)",
     accentBg: "hsla(145, 65%, 52%, 0.08)",
@@ -245,7 +243,7 @@ export const projects = [
     github: "https://github.com/DagaVedant/EMNIST-Character-Classifier",
     image: `${import.meta.env.BASE_URL}images/emnist-classifier.png`,
     description:
-      "CNN trained on the EMNIST Balanced dataset to classify handwritten digits and letters, with a PyTorch pipeline, WandB experiment tracking, and an interactive drawing web app for real-time predictions.",
+      "A CNN trained on the EMNIST Balanced dataset to read handwritten digits and letters. Built with a PyTorch pipeline and WandB experiment tracking, plus a drawing web app so you can test it live.",
     tags: ["CNN", "PyTorch", "Flask", "WandB", "Computer Vision"],
     accent: "hsl(210 80% 62%)",
     accentBg: "hsla(210, 80%, 62%, 0.08)",
@@ -256,7 +254,7 @@ export const projects = [
     github: "https://github.com/DagaVedant/California-House-Price-Predictor",
     image: `${import.meta.env.BASE_URL}images/california-house-price.png`,
     description:
-      "Predict median house prices anywhere in California — click a heatmap or enter an address to get an XGBoost-powered estimate with a confidence range, visualized on Google Maps.",
+      "Predicts median house prices anywhere in California. Click the heatmap or type in an address and it'll give you an XGBoost estimate with a confidence range, right on Google Maps.",
     tags: ["XGBoost", "scikit-learn", "Streamlit", "Google Maps", "ML"],
     accent: "hsl(165 70% 50%)",
     accentBg: "hsla(165, 70%, 50%, 0.08)",
@@ -268,7 +266,7 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/DagaVedant/Spam-Message-AI-Classifier/main/images/spam_wordcloud.png",
     description:
-      "NLP spam detector using Multinomial Naive Bayes and custom preprocessing pipelines to classify messages with high accuracy.",
+      "An NLP spam detector that uses Multinomial Naive Bayes and a custom preprocessing pipeline to sort spam texts from real ones.",
     tags: ["NLP", "Naive Bayes", "scikit-learn", "Python"],
     accent: "hsl(158 75% 52%)",
     accentBg: "hsla(158, 75%, 52%, 0.08)",
@@ -279,7 +277,7 @@ export const projects = [
     github: "https://github.com/DagaVedant/Leccion-7-de-Espanol",
     image: `${import.meta.env.BASE_URL}images/leccion-7-espanol.png`,
     description:
-      "Interactive Spanish review site that helps students learn job-related vocabulary, the future and future perfect tenses, and the past subjunctive. Built with React, Node.js, and TypeScript.",
+      "An interactive Spanish review site that helps students learn job vocab, the future and future perfect tenses, and the past subjunctive. Built with React, Node.js, and TypeScript.",
     tags: ["React", "Node.js", "TypeScript", "Education"],
     accent: "hsl(175 70% 52%)",
     accentBg: "hsla(175, 70%, 52%, 0.08)",
@@ -291,7 +289,7 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/DagaVedant/Python-Examples/main/public/images/preview.png",
     description:
-      "An interactive, browser-based Python course for beginners — no downloads, no paywalls. Bite-sized units with code examples, mini quizzes, practice problems, and projects. Live demo available.",
+      "A browser-based Python course for beginners. No downloads, no paywalls, just bite-sized units with code examples, quizzes, practice problems, and projects.",
     tags: ["Python", "Education", "JavaScript", "Interactive"],
     accent: "hsl(210 80% 62%)",
     accentBg: "hsla(210, 80%, 62%, 0.08)",
@@ -303,7 +301,7 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/DagaVedant/Almanac-Slack-Bot/main/images/screenshot.png",
     description:
-      "A daily-digest Slack bot that posts a fun word, fact, historical event, and quote to your channel every day.",
+      "A Slack bot that drops a word, a fact, a historical event, and a quote in your channel every day.",
     tags: ["Slack API", "Node.js", "Automation", "Bot"],
     accent: "hsl(165 70% 50%)",
     accentBg: "hsla(165, 70%, 50%, 0.08)",
@@ -314,8 +312,8 @@ export const education = [
   {
     degree: "Freshman at Edison Academy Magnet School",
     school: "Edison Academy Magnet School",
-    period: "2025 – 2029",
-    details: "Middlesex County's most Elite public high school.",
+    period: "2025 - 2029",
+    details: "One of the top public high schools in Middlesex County.",
     icon: GraduationCap,
     color: "hsl(158 75% 52%)",
     bg: "hsla(158, 75%, 52%, 0.08)",
@@ -323,9 +321,9 @@ export const education = [
   {
     degree: "Independent Learning",
     school: "Online Courses and Personal Projects",
-    period: "2023 – Present",
+    period: "2023 - Present",
     details:
-      "Independent study in AI/ML, deep learning, full-stack development, and embedded systems through hands-on projects.",
+      "Teaching myself AI/ML, deep learning, full-stack dev, and embedded systems by just building stuff.",
     icon: BookOpen,
     color: "hsl(195 90% 55%)",
     bg: "hsla(195, 90%, 55%, 0.08)",
@@ -333,15 +331,15 @@ export const education = [
 ];
 
 export const leadershipIntro =
-  "Beyond building software, I teach and lead — with 600+ volunteer hours focused on STEM education and youth mentoring across New Jersey.";
+  "Outside of building software, I teach and lead. I've put in 600+ volunteer hours on STEM education and mentoring kids across New Jersey.";
 
 export const leadership = [
   {
     role: "Secretary & Mentor",
     org: "Robbinsville 4-H Innovation Club",
-    period: "2022 – Present",
+    period: "2022 - Present",
     details:
-      "Lead and mentor a team of student teachers — planning lessons and materials, teaching 70+ students, and running outreach at schools, libraries, and senior centers. Co-designed and co-taught a 6-month IoT curriculum for students in India.",
+      "I lead and mentor a team of student teachers, planning lessons and materials, teaching 70+ students, and running outreach at schools, libraries, and senior centers. Also co-designed and co-taught a 6-month IoT curriculum for students in India.",
     icon: Users,
     color: "hsl(158 75% 52%)",
     bg: "hsla(158, 75%, 52%, 0.08)",
@@ -349,9 +347,9 @@ export const leadership = [
   {
     role: "Lead",
     org: "4-H Curriculum Redesign",
-    period: "2024 – Present",
+    period: "2024 - Present",
     details:
-      "Restructured the club's teaching framework for better learning progression and engagement, and introduced a peer-teaching model where senior students mentor newer participants.",
+      "Rebuilt the club's teaching framework so lessons actually build on each other, and started a peer-teaching model where older students mentor the new ones.",
     icon: BookOpen,
     color: "hsl(195 90% 55%)",
     bg: "hsla(195, 90%, 55%, 0.08)",
@@ -359,9 +357,9 @@ export const leadership = [
   {
     role: "Co-founder & Teacher",
     org: "4-H Summer Learning Program",
-    period: "2026 – Present",
+    period: "2026 - Present",
     details:
-      "Co-founding a community STEM summer program — building the curriculum and program structure ahead of its first session this summer.",
+      "Co-founding a community STEM summer program, building out the curriculum and structure before it kicks off this summer.",
     icon: Lightbulb,
     color: "hsl(175 70% 52%)",
     bg: "hsla(175, 70%, 52%, 0.08)",
@@ -371,15 +369,24 @@ export const leadership = [
 /** @type {never[]} */
 export const certifications = [];
 
-/** @type {never[]} */
-export const certificationsInProgress = [];
+export const certificationsInProgress = [
+  {
+    title: "Python Programming Fundamentals",
+    issuer: "Microsoft",
+    href: "https://www.coursera.org/learn/microsoft-python-programming-fundamentals",
+    image:
+      "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/cc/61dbdf2c1c475d82d3b8bf8eee1bda/MSFT-stacked-logo_FINAL.png",
+    bg: "hsla(145, 65%, 52%, 0.08)",
+    border: "hsla(145, 65%, 52%, 0.2)",
+  },
+];
 
 export const hobbies = [
   {
     icon: Microscope,
     label: "Tinkering",
     description:
-      "Taking things apart, building circuits, and experimenting with hardware.",
+      "Taking things apart, building circuits, messing with hardware.",
     color: "hsl(158 75% 52%)",
     bg: "hsla(158, 75%, 52%, 0.08)",
   },
@@ -387,7 +394,7 @@ export const hobbies = [
     icon: TennisBallIcon,
     label: "Tennis",
     description:
-      "I love playing tennis with friends and for school. Season just ended and I was JV first as a freshman. YAY!",
+      "I play tennis with friends and for school. Season just ended and I made JV first as a freshman.",
     color: "hsl(195 90% 55%)",
     bg: "hsla(195, 90%, 55%, 0.08)",
   },
@@ -395,7 +402,7 @@ export const hobbies = [
     icon: Gamepad2,
     label: "Gaming",
     description:
-      "Playing strategy games or really anything that involves thinking and mathematics.",
+      "Strategy games mostly, really anything that makes me think or do math.",
     color: "hsl(175 70% 52%)",
     bg: "hsla(175, 70%, 52%, 0.08)",
   },
@@ -403,7 +410,7 @@ export const hobbies = [
     icon: BookMarked,
     label: "Reading",
     description:
-      "I love reading anything sci-fi, mystery, or just something fantasy. Favorite Series: Inheritance Games by Jennifer Lynn Barnes",
+      "I love sci-fi, mystery, or fantasy. Favorite series: Inheritance Games by Jennifer Lynn Barnes.",
     color: "hsl(145 65% 52%)",
     bg: "hsla(145, 65%, 52%, 0.08)",
   },
@@ -411,7 +418,7 @@ export const hobbies = [
     icon: Mountain,
     label: "Outdoors",
     description:
-      "I love hiking, and just exploring nature. Best trail of all time is definitely Fairy Falls Trail in Yellowstone.",
+      "I love hiking and exploring nature. Best trail I've done is Fairy Falls in Yellowstone.",
     color: "hsl(165 70% 50%)",
     bg: "hsla(165, 70%, 50%, 0.08)",
   },
@@ -419,7 +426,7 @@ export const hobbies = [
     icon: Headphones,
     label: "Music",
     description:
-      "Love playing music, when on the bus, chilling in my room, and coding.",
+      "Music's always on, bus rides, my room, while I'm coding, doesn't matter.",
     color: "hsl(210 75% 58%)",
     bg: "hsla(210, 75%, 58%, 0.08)",
   },
@@ -428,9 +435,9 @@ export const hobbies = [
 export const recognitions = [
   {
     icon: Medal,
-    title: "3rd Place — TSA TEAMS Nationals",
+    title: "3rd Place: TSA TEAMS Nationals",
     description:
-      "Placed 3rd in the Multiple Choice round at the TSA TEAMS National Conference.",
+      "Placed 3rd in the Multiple Choice round at TSA TEAMS Nationals.",
     year: "2026",
     color: "hsl(158 75% 52%)",
     bg: "hsla(158, 75%, 52%, 0.08)",
@@ -445,24 +452,24 @@ export const recognitions = [
   },
   {
     icon: Activity,
-    title: "HackJPS 2026 — PulseFlow-AI",
+    title: "HackJPS 2026: PulseFlow-AI",
     description:
-      "Built PulseFlow-AI, a hospital digital-twin platform simulating patient flow and predicting bottlenecks with optimization and forecasting.",
+      "Built PulseFlow-AI here, a hospital digital-twin platform that simulates patient flow and predicts bottlenecks.",
     year: "2026",
     color: "hsl(195 90% 55%)",
     bg: "hsla(195, 90%, 55%, 0.08)",
   },
   {
     icon: Zap,
-    title: "Top 10 Overall — MakeNJIT",
-    description: "Finished in the top 10 overall at the MakeNJIT hackathon.",
+    title: "Top 10 Overall: MakeNJIT",
+    description: "Finished top 10 overall at the MakeNJIT hackathon.",
     year: "2026",
     color: "hsl(210 80% 62%)",
     bg: "hsla(210, 80%, 62%, 0.08)",
   },
   {
     icon: Globe,
-    title: "Honorable Mention — ILMUNC",
+    title: "Honorable Mention: ILMUNC",
     description:
       "Recognized at the Ivy League Model United Nations Conference.",
     year: "2026",
@@ -488,17 +495,16 @@ export const recognitions = [
   {
     icon: Calculator,
     title: "MCAMC Math Competition",
-    description:
-      "4th place individual and 3rd place team at the MCAMC math competition.",
+    description: "4th place individual and 3rd place team at MCAMC.",
     year: "2025",
     color: "hsl(158 75% 52%)",
     bg: "hsla(158, 75%, 52%, 0.08)",
   },
   {
     icon: Award,
-    title: "Best AI/ML Project — HackJPS",
+    title: "Best AI/ML Project: HackJPS",
     description:
-      "Won Best AI/ML Project for VeggieBuddy, an AI diet-recommendation platform built with React, Flask, and the Google Maps Places API.",
+      "Won Best AI/ML Project for VeggieBuddy, an AI diet-recommendation app I built with React, Flask, and the Google Maps Places API.",
     year: "2025",
     color: "hsl(145 65% 52%)",
     bg: "hsla(145, 65%, 52%, 0.08)",
