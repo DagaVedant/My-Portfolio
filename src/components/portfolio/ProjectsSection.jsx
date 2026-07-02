@@ -15,7 +15,7 @@ export default function ProjectsSection() {
       />
 
       <div className="max-w-5xl mx-auto">
-        <RevealSection>
+        <RevealSection className="">
           <div className="flex items-center gap-3 mb-3">
             <div
               className="h-px w-10 rounded-full"
@@ -47,7 +47,7 @@ export default function ProjectsSection() {
           {projects.map((project, index) => {
             const Icon = project.icon;
             return (
-              <RevealSection key={project.title} delay={index * 100}>
+              <RevealSection key={project.title} className="" delay={index * 100}>
                 <div
                   className="group relative p-6 rounded-2xl border transition-all duration-300 hover:scale-[1.02] cursor-pointer h-full"
                   style={{
