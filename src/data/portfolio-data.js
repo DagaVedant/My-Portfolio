@@ -186,7 +186,8 @@ export const projects = [
     icon: Activity,
     title: "PulseFlow-AI",
     github: "https://github.com/DagaVedant/PulseFlow-AI",
-    image: "https://picsum.photos/seed/pulseflow/600/400",
+    image:
+      "https://raw.githubusercontent.com/DagaVedant/PulseFlow-AI/main/frontend/public/pages/Page%204.png",
     description:
       "Healthcare operations platform combining optimization, simulation, forecasting, and AI to proactively identify and resolve hospital bottlenecks.",
     tags: ["OR-Tools", "SimPy", "AI", "Healthcare", "Python"],
@@ -197,7 +198,7 @@ export const projects = [
     icon: BarChart3,
     title: "AI Portfolio Analyzer",
     github: "https://github.com/DagaVedant/AI-Portfolio-Analyzer",
-    image: "https://picsum.photos/seed/portfolio-analyzer/600/400",
+    image: `${import.meta.env.BASE_URL}images/ai-portfolio-analyzer.png`,
     description:
       "Deep learning platform that trains LSTM and Transformer models on 46 stocks to predict returns, volatility, and downside risk — with sentiment analysis, portfolio optimization, and a full backtesting engine.",
     tags: ["LSTM", "Transformers", "PyTorch", "Backtesting", "Finance"],
@@ -220,7 +221,7 @@ export const projects = [
     icon: Bot,
     title: "FRC Chatbot — Team 10600",
     github: "https://github.com/DagaVedant/FRC-Chatbot-Team-10600",
-    image: "https://picsum.photos/seed/frc-chatbot/600/400",
+    image: `${import.meta.env.BASE_URL}images/frc-chatbot.png`,
     description:
       "Avocado — an AI pit assistant for FRC Team 10600 built with FastAPI, Ollama, and a hybrid TF-IDF + semantic RAG system. Answers questions about the robot, team, and game manual using local LLMs with conversation memory.",
     tags: ["RAG", "FastAPI", "Ollama", "Robotics", "Python"],
@@ -231,7 +232,7 @@ export const projects = [
     icon: Mic,
     title: "VoiceGPT",
     github: "https://github.com/DagaVedant/VoiceGPT",
-    image: "https://picsum.photos/seed/voicegpt/600/400",
+    image: `${import.meta.env.BASE_URL}images/voicegpt-logo.png`,
     description:
       "Voice-controlled GPT assistant with speech recognition, text-to-speech, and image generation. Showcased at Maker Fair 2024.",
     tags: ["OpenAI API", "Speech Recognition", "TTS", "Python"],
@@ -242,7 +243,7 @@ export const projects = [
     icon: Brain,
     title: "EMNIST Character Classifier",
     github: "https://github.com/DagaVedant/EMNIST-Character-Classifier",
-    image: "https://picsum.photos/seed/emnist/600/400",
+    image: `${import.meta.env.BASE_URL}images/emnist-classifier.png`,
     description:
       "CNN trained on the EMNIST Balanced dataset to classify handwritten digits and letters, with a PyTorch pipeline, WandB experiment tracking, and an interactive drawing web app for real-time predictions.",
     tags: ["CNN", "PyTorch", "Flask", "WandB", "Computer Vision"],
@@ -253,7 +254,7 @@ export const projects = [
     icon: MapPin,
     title: "California House Price Predictor",
     github: "https://github.com/DagaVedant/California-House-Price-Predictor",
-    image: "https://picsum.photos/seed/california-house/600/400",
+    image: `${import.meta.env.BASE_URL}images/california-house-price.png`,
     description:
       "Predict median house prices anywhere in California — click a heatmap or enter an address to get an XGBoost-powered estimate with a confidence range, visualized on Google Maps.",
     tags: ["XGBoost", "scikit-learn", "Streamlit", "Google Maps", "ML"],
@@ -276,7 +277,7 @@ export const projects = [
     icon: Globe,
     title: "Lección 7 de Español",
     github: "https://github.com/DagaVedant/Leccion-7-de-Espanol",
-    image: "https://picsum.photos/seed/leccion-espanol/600/400",
+    image: `${import.meta.env.BASE_URL}images/leccion-7-espanol.png`,
     description:
       "Interactive Spanish review site that helps students learn job-related vocabulary, the future and future perfect tenses, and the past subjunctive. Built with React, Node.js, and TypeScript.",
     tags: ["React", "Node.js", "TypeScript", "Education"],
