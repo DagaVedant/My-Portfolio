@@ -1,23 +1,16 @@
 # Portfolio Improvement Checklist
 
 ## Phase 2  Content people explicitly asked for
-
 - [ ] Build a "Currently working on" section
       - [ ] Pick which active projects to feature
       - [ ] Add a status line per project (e.g. "backend done, UI in progress")
       - [ ] Add a simple progress bar (manual percentage is fine)
       - [ ] Add it to Portfolio.jsx in the section order
-- [ ] Rewrite devlogs with actual substance going forward:
-      - [ ] What you built
-      - [ ] What broke / was hard
-      - [ ] How you fixed it
-      - [ ] Not just "X minutes logged, shipped Y"
 - [ ] Expand README.md
       - [ ] Add a "Challenges I faced" section
       - [ ] Explain specific problems + how you solved them (not just feature list)
 
 ## Phase 3  "Looks AI-generated" / UX complaints
-
 - [ ] Audit gradient/glow/blob usage across every section  pick 1-2 signature
       visual elements to keep (word wheel, typewriter), cut the rest of the
       copy-pasted gradient treatment
