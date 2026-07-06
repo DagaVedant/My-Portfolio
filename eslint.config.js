@@ -52,7 +52,19 @@ export default [
       "react/react-in-jsx-scope": "off",
       "react/no-unknown-property": [
         "error",
-        { ignore: ["cmdk-input-wrapper", "toast-close"] },
+        {
+          ignore: [
+            "cmdk-input-wrapper",
+            "toast-close",
+            "args",
+            "position",
+            "rotation",
+            "intensity",
+            "wireframe",
+            "emissive",
+            "emissiveIntensity",
+          ],
+        },
       ],
       "react-hooks/rules-of-hooks": "error",
     },
