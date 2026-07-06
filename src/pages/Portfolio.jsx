@@ -1,16 +1,16 @@
-import ScrollProgress from "../components/portfolio/ScrollProgress";
-import Navbar from "../components/portfolio/Navbar";
-import HeroSection from "../components/portfolio/HeroSection";
-import AboutSection from "../components/portfolio/AboutSection";
-import TechStackSection from "../components/portfolio/TechStackSection";
-import ProjectsSection from "../components/portfolio/ProjectsSection";
-import EducationSection from "../components/portfolio/EducationSection";
-import LeadershipSection from "../components/portfolio/LeadershipSection";
-import CertificationsSection from "../components/portfolio/CertificationsSection";
-import RecognitionsSection from "../components/portfolio/RecognitionsSection";
-import HobbiesSection from "../components/portfolio/HobbiesSection";
-import ContactSection from "../components/portfolio/ContactSection";
-import Footer from "../components/portfolio/Footer";
+import { ScrollProgress, Navbar, SocialRail, Footer } from "../components/portfolio/Layout";
+import HeroSection from "../components/portfolio/Hero";
+import {
+  AboutSection,
+  HobbiesSection,
+  EducationSection,
+  LeadershipSection,
+  TechStackSection,
+  ProjectsSection,
+  CertificationsSection,
+  RecognitionsSection,
+  ContactSection,
+} from "../components/portfolio/Sections";
 
 export default function Portfolio() {
   return (
@@ -19,6 +19,7 @@ export default function Portfolio() {
       <div className="relative z-10">
         <ScrollProgress />
         <Navbar />
+        <SocialRail />
         <main>
           <HeroSection />
           <AboutSection />
