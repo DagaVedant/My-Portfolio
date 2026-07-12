@@ -2,34 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 import { personal, contactLinks } from "@/data/portfolio-data";
 
-export function ScrollProgress() {
-  const [progress, setProgress] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      setProgress(docHeight > 0 ? (scrollTop / docHeight) * 100 : 0);
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  return (
-    <div className="fixed top-0 left-0 right-0 z-50 h-[3px]" style={{ background: "hsla(214, 32%, 88%, 0.8)" }}>
-      <div
-        className="h-full transition-all duration-150 ease-out"
-        style={{
-          width: `${progress}%`,
-          background: "linear-gradient(90deg, hsl(217 75% 52%), hsl(199 80% 55%), hsl(210 80% 60%))",
-          boxShadow: "0 0 10px hsla(217, 75%, 52%, 0.8)",
-        }}
-      />
-    </div>
-  );
-}
-
 const navLinks = [
   { label: "Home", href: "#hero" },
   { label: "About", href: "#about" },
@@ -66,10 +38,12 @@ export function Navbar() {
     <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-40 border-b transition-all duration-500",
-        scrolled && "backdrop-blur-xl"
+        scrolled && "backdrop-blur-xl",
       )}
       style={{
-        background: scrolled ? "hsla(0, 0%, 100%, 0.8)" : "hsla(0, 0%, 100%, 0.4)",
+        background: scrolled
+          ? "hsla(0, 0%, 100%, 0.8)"
+          : "hsla(0, 0%, 100%, 0.4)",
         borderColor: "hsla(214, 32%, 88%, 0.8)",
       }}
     >
@@ -95,7 +69,12 @@ export function Navbar() {
               onMouseEnter={() => setHoveredLink(link.href)}
               onMouseLeave={() => setHoveredLink(null)}
               className="text-sm font-inter font-medium transition-colors duration-300 whitespace-nowrap"
-              style={{ color: hoveredLink === link.href ? "hsl(217 75% 62%)" : "hsl(215 16% 32%)" }}
+              style={{
+                color:
+                  hoveredLink === link.href
+                    ? "hsl(217 75% 62%)"
+                    : "hsl(215 16% 32%)",
+              }}
             >
               {link.label}
             </a>
@@ -137,7 +116,8 @@ export function SocialRail() {
           }`}
           style={{
             color: "hsl(217 75% 48%)",
-            background: hoveredIndex === i ? "hsla(217, 75%, 52%, 0.08)" : "transparent",
+            background:
+              hoveredIndex === i ? "hsla(217, 75%, 52%, 0.08)" : "transparent",
           }}
         >
           <Icon className="w-4 h-4" />
@@ -149,9 +129,15 @@ export function SocialRail() {
 
 export function Footer() {
   return (
-    <footer className="border-t py-8 px-6" style={{ borderColor: "hsla(214, 32%, 88%, 1)" }}>
+    <footer
+      className="border-t py-8 px-6"
+      style={{ borderColor: "hsla(214, 32%, 88%, 1)" }}
+    >
       <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-        <span className="text-sm font-inter" style={{ color: "hsl(215 16% 44%)" }}>
+        <span
+          className="text-sm font-inter"
+          style={{ color: "hsl(215 16% 44%)" }}
+        >
           © {new Date().getFullYear()} {personal.firstName} {personal.lastName}
         </span>
       </div>
@@ -171,7 +157,7 @@ export function RevealSection({ children, className, delay = 0 }) {
           observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.15, rootMargin: "0px 0px -60px 0px" }
+      { threshold: 0.15, rootMargin: "0px 0px -60px 0px" },
     );
 
     if (ref.current) observer.observe(ref.current);
@@ -184,7 +170,7 @@ export function RevealSection({ children, className, delay = 0 }) {
       className={cn(
         "transition-all duration-700 ease-out",
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12",
-        className
+        className,
       )}
       style={{ transitionDelay: `${delay}ms` }}
     >

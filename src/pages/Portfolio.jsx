@@ -1,4 +1,4 @@
-import { ScrollProgress, Navbar, SocialRail, Footer } from "../components/portfolio/Layout";
+import { Navbar, SocialRail, Footer } from "../components/portfolio/Layout";
 import HeroSection from "../components/portfolio/Hero";
 import {
   AboutSection,
@@ -17,7 +17,6 @@ export default function Portfolio() {
     <div className="min-h-screen bg-background text-foreground font-inter antialiased">
       <div className="animated-grid-bg" />
       <div className="relative z-10">
-        <ScrollProgress />
         <Navbar />
         <SocialRail />
         <main>
