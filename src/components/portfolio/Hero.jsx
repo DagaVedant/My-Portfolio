@@ -206,17 +206,7 @@ export default function HeroSection() {
           }}
         />
 
-        <div className="flex items-center gap-2 px-6 sm:px-10 pt-8 pb-4">
-          <span className="w-2 h-2 bg-primary flex-shrink-0" />
-          <span
-            className="text-xs font-mono font-semibold tracking-widest uppercase"
-            style={{ color: "hsl(217 75% 48%)" }}
-          >
-            Always building something
-          </span>
-        </div>
-
-        <div className="px-6 sm:px-10 pb-8 border-b border-border">
+        <div className="px-6 sm:px-10 pt-8 pb-8 border-b border-border">
           <h1 className="font-mono font-black uppercase text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight leading-[0.95]">
             <span className="text-foreground">{personal.firstName}</span>{" "}
             <span className="gradient-text">{personal.lastName}</span>

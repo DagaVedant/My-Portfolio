@@ -55,18 +55,6 @@ export function AboutSection() {
         style={{ background: "hsla(0, 0%, 100%, 0.5)" }}
       >
         <RevealSection>
-          <div className="flex items-center gap-3 mb-3">
-            <span
-              className="w-2 h-2 flex-shrink-0"
-              style={{ background: "hsl(217 75% 52%)" }}
-            />
-            <span
-              className="text-xs font-mono font-semibold tracking-widest uppercase"
-              style={{ color: "hsl(217 75% 48%)" }}
-            >
-              About
-            </span>
-          </div>
           <h2 className="font-inter font-black text-4xl sm:text-5xl tracking-tight text-foreground mb-6">
             A bit about <span style={{ color: "hsl(217 75% 48%)" }}>me</span>.
           </h2>
@@ -130,18 +118,6 @@ export function HobbiesSection() {
         style={{ background: "hsla(0, 0%, 100%, 0.5)" }}
       >
         <RevealSection>
-          <div className="flex items-center gap-3 mb-3">
-            <div
-              className="w-2 h-2 flex-shrink-0"
-              style={{ background: "hsl(210 75% 58%)" }}
-            />
-            <span
-              className="text-xs font-mono font-semibold tracking-widest uppercase"
-              style={{ color: "hsl(210 75% 45%)" }}
-            >
-              Hobbies
-            </span>
-          </div>
           <h2 className="font-inter font-black text-4xl sm:text-5xl tracking-tight text-foreground mb-12">
             Outside of <span style={{ color: "hsl(210 75% 45%)" }}>coding</span>
           </h2>
@@ -199,18 +175,6 @@ export function EducationSection() {
         style={{ background: "hsla(0, 0%, 100%, 0.5)" }}
       >
         <RevealSection>
-          <div className="flex items-center gap-3 mb-3">
-            <div
-              className="w-2 h-2 flex-shrink-0"
-              style={{ background: "hsl(199 90% 55%)" }}
-            />
-            <span
-              className="text-xs font-mono font-semibold tracking-widest uppercase"
-              style={{ color: "hsl(199 90% 36%)" }}
-            >
-              Education
-            </span>
-          </div>
           <h2 className="font-inter font-black text-4xl sm:text-5xl tracking-tight text-foreground mb-12">
             School <span style={{ color: "hsl(199 90% 36%)" }}>stuff</span>
           </h2>
@@ -300,18 +264,6 @@ export function LeadershipSection() {
         style={{ background: "hsla(0, 0%, 100%, 0.5)" }}
       >
         <RevealSection>
-          <div className="flex items-center gap-3 mb-3">
-            <div
-              className="w-2 h-2 flex-shrink-0"
-              style={{ background: "hsl(217 75% 52%)" }}
-            />
-            <span
-              className="text-xs font-mono font-semibold tracking-widest uppercase"
-              style={{ color: "hsl(217 75% 48%)" }}
-            >
-              Leadership
-            </span>
-          </div>
           <h2 className="font-inter font-black text-4xl sm:text-5xl tracking-tight text-foreground mb-6">
             Teaching and{" "}
             <span style={{ color: "hsl(217 75% 48%)" }}>mentoring</span>
@@ -404,18 +356,6 @@ export function TechStackSection() {
         style={{ background: "hsla(0, 0%, 100%, 0.5)" }}
       >
         <RevealSection>
-          <div className="flex items-center gap-3 mb-3">
-            <span
-              className="w-2 h-2 flex-shrink-0"
-              style={{ background: "hsl(189 70% 52%)" }}
-            />
-            <span
-              className="text-xs font-mono font-semibold tracking-widest uppercase"
-              style={{ color: "hsl(189 70% 36%)" }}
-            >
-              Tech Stack
-            </span>
-          </div>
           <h2 className="font-inter font-black text-4xl sm:text-5xl tracking-tight text-foreground mb-12">
             What I <span style={{ color: "hsl(189 70% 36%)" }}>build with</span>
           </h2>
@@ -492,18 +432,6 @@ export function ProjectsSection() {
         style={{ background: "hsla(0, 0%, 100%, 0.5)" }}
       >
         <RevealSection>
-          <div className="flex items-center gap-3 mb-3">
-            <div
-              className="w-2 h-2 flex-shrink-0"
-              style={{ background: "hsl(199 90% 55%)" }}
-            />
-            <span
-              className="text-xs font-mono font-semibold tracking-widest uppercase"
-              style={{ color: "hsl(199 90% 36%)" }}
-            >
-              Projects
-            </span>
-          </div>
           <h2 className="font-inter font-black text-4xl sm:text-5xl tracking-tight text-foreground mb-6">
             Things I&apos;ve{" "}
             <span style={{ color: "hsl(199 90% 36%)" }}>built</span>.
@@ -672,18 +600,6 @@ export function CertificationsSection() {
         style={{ background: "hsla(0, 0%, 100%, 0.5)" }}
       >
         <RevealSection>
-          <div className="flex items-center gap-3 mb-3">
-            <div
-              className="w-2 h-2 flex-shrink-0"
-              style={{ background: "hsl(217 65% 52%)" }}
-            />
-            <span
-              className="text-xs font-mono font-semibold tracking-widest uppercase"
-              style={{ color: "hsl(217 65% 48%)" }}
-            >
-              Certifications
-            </span>
-          </div>
           <h2 className="font-inter font-black text-4xl sm:text-5xl tracking-tight text-foreground mb-12">
             Still{" "}
             <span style={{ color: "hsl(217 65% 48%)" }}>picking things up</span>
@@ -855,18 +771,6 @@ export function RecognitionsSection() {
         style={{ background: "hsla(0, 0%, 100%, 0.5)" }}
       >
         <RevealSection>
-          <div className="flex items-center gap-3 mb-3">
-            <div
-              className="w-2 h-2 flex-shrink-0"
-              style={{ background: "hsl(217 75% 52%)" }}
-            />
-            <span
-              className="text-xs font-mono font-semibold tracking-widest uppercase"
-              style={{ color: "hsl(217 75% 48%)" }}
-            >
-              Recognitions
-            </span>
-          </div>
           <h2 className="font-inter font-black text-4xl sm:text-5xl tracking-tight text-foreground mb-12">
             Stuff I&apos;ve{" "}
             <span style={{ color: "hsl(217 75% 48%)" }}>won</span>
